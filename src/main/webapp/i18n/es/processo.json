@@ -1,0 +1,28 @@
+{
+  "advappApp": {
+    "processo": {
+      "home": {
+        "title": "Processos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Processo",
+        "createOrEditLabel": "Crear o editar Processo",
+        "notFound": "Ningún Processos encontrado"
+      },
+      "created": "Un nuevo Processo ha sido creado con el identificador {{ param }}",
+      "updated": "Un Processo ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Processo ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Processo {{ id }}?"
+      },
+      "detail": {
+        "title": "Processo"
+      },
+      "id": "ID",
+      "nuj": "Nuj",
+      "nemroProcessoTJ": "Nemro Processo TJ",
+      "vara": "Vara",
+      "obs": "Obs",
+      "pessoas": "Pessoas"
+    }
+  }
+}

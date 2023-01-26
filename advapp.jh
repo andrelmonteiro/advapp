@@ -1,0 +1,69 @@
+entity Processo {
+	
+    nuj String,
+    nemroProcessoTJ Integer,
+    vara String,
+    obs String
+          
+}
+
+entity Contato{
+	
+    celular String,
+    telefone String,
+    email String,
+    instagram LocalDate
+    
+}
+
+entity Pessoa {
+
+ativo Integer,
+autoridade Boolean,
+contato String required,
+}
+
+entity Estado{
+
+ativo Integer,
+codigoIbge Integer,
+nome String required,
+sigla String
+}
+
+entity Pais{
+
+ativo Integer,
+nome String required,
+sigla String,
+
+}
+
+entity Municipio{
+
+ativo Integer,
+codigoIbge Integer,
+nome String required,
+}
+entity Endereco{
+ativo Integer,
+atual Boolean,
+bairro String
+cep String,
+complemento String, 
+dataExclusao LocalDate,
+usuarioExclusaoId Integer
+
+}
+
+relationship OneToMany {
+ Pais to Estado{pais(nome)},
+ Estado to Municipio,
+ Municipio to Endereco,
+} 
+ relationship ManyToMany {
+ Pessoa{enderecos(nome)} to Endereco{pessoas(nome)}
+ Pessoa{processos(nuj)} to Processo{pessoas(nome)}
+
+ 
+}

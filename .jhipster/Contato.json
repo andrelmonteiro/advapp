@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20230126135422",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "contato",
+  "fields": [
+    {
+      "fieldName": "celular",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "instagram",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Contato",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
