@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230126135421",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "processo",
+  "fields": [
+    {
+      "fieldName": "nuj",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nemroProcessoTJ",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vara",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "obs",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Processo",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "nome",
+      "otherEntityName": "pessoa",
+      "otherEntityRelationshipName": "processos",
+      "ownerSide": false,
+      "relationshipName": "pessoas",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

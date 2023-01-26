@@ -48,6 +48,20 @@ public class CacheConfiguration {
             createCache(cm, br.com.advapp.domain.User.class.getName());
             createCache(cm, br.com.advapp.domain.Authority.class.getName());
             createCache(cm, br.com.advapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, br.com.advapp.domain.Processo.class.getName());
+            createCache(cm, br.com.advapp.domain.Processo.class.getName() + ".pessoas");
+            createCache(cm, br.com.advapp.domain.Contato.class.getName());
+            createCache(cm, br.com.advapp.domain.Pessoa.class.getName());
+            createCache(cm, br.com.advapp.domain.Pessoa.class.getName() + ".enderecos");
+            createCache(cm, br.com.advapp.domain.Pessoa.class.getName() + ".processos");
+            createCache(cm, br.com.advapp.domain.Estado.class.getName());
+            createCache(cm, br.com.advapp.domain.Estado.class.getName() + ".municipios");
+            createCache(cm, br.com.advapp.domain.Pais.class.getName());
+            createCache(cm, br.com.advapp.domain.Pais.class.getName() + ".estados");
+            createCache(cm, br.com.advapp.domain.Municipio.class.getName());
+            createCache(cm, br.com.advapp.domain.Municipio.class.getName() + ".enderecos");
+            createCache(cm, br.com.advapp.domain.Endereco.class.getName());
+            createCache(cm, br.com.advapp.domain.Endereco.class.getName() + ".pessoas");
             // jhipster-needle-ehcache-add-entry
         };
     }
