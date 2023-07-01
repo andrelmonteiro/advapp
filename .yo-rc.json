@@ -19,6 +19,7 @@
     "enableHibernateCache": true,
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
+    "entities": [],
     "entitySuffix": "",
     "gitCompany": "",
     "jhiPrefix": "jhi",
@@ -45,7 +46,7 @@
     "websocket": false,
     "withAdminUi": true
   },
-  "git-provider": "GitHub",
   "git-company": "andrelmonteiro",
+  "git-provider": "GitHub",
   "repository-name": "advapp"
 }
